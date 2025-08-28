@@ -1,0 +1,165 @@
+body {
+    background: #210124;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+
+h1 {
+    text-align: center;
+    color: #F7F9F7;
+    margin-top: 10px;
+    
+}
+
+hr {
+    margin: 20px auto;
+    width: 100%;
+    border: 10px solid #750D37;
+    ;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.sidebar {
+    background: #DBF9F0;
+    padding: 24px 20px;
+    border-radius: 14px;
+    height: fit-content;
+    width: 240px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    align-self: flex-start;
+}
+
+.center-area {
+    display: flex;
+    flex-direction: column;
+    flex: 10;
+    padding-left: 300px;
+
+}
+
+.sidebar h2,
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar label {
+    display: block;
+    margin: 10px 0 6px 0;
+    font-weight: bold;
+}
+
+.sidebar input[type="text"] {
+    width: 80%;
+    padding: 4px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#start {
+    margin: 10px 0 16px 0;
+    padding: 6px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #03363d;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+
+#current-turn {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #03363d;
+}
+
+.sidebar ul {
+    text-align: left;
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.98em;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.box {
+    background: #B3DEC1;
+    border: none;
+    border-radius: 16px;
+    font-size: 2.5em;
+    color: #03363d;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: "Water Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.box:disabled {
+    background: #f8d7c4;
+    cursor: not-allowed;
+}
+
+#reset {
+    margin: 0 auto;
+    padding: 8px 28px;
+    border-radius: 16px;
+    border: none;
+    background: #750D37;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+    
+}
+
+.game.blur {
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.box:hover {
+    background: #ffd6c2;
+    transition: background 0.1ms;
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        margin-bottom: 30px;
+        width: 90vw;
+    }
+}

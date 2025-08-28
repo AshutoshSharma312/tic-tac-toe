@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rampart+One&family=Water+Brush&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <hr>
+        <div class="main-container">
+            <div class="sidebar">
+                <h2>Players</h2>
+                <div>
+                    <label>Player 1 (O): <input type="text" id="player1" placeholder="Enter name"></label>
+                </div>
+                <div>
+                    <label>Player 2 (X): <input type="text" id="player2" placeholder="Enter name"></label>
+                </div>
+                <button id="start">Start Game</button>
+                <div id="current-turn"></div>
+                <div id="scoreboard">
+                    <div><span id="player1-name">Player 1</span> Wins: <span id="player1-wins">0</span></div>
+                    <div><span id="player2-name">Player 2</span> Wins: <span id="player2-wins">0</span></div>
+                </div>
+            </div>
+            <div class="center-area">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
