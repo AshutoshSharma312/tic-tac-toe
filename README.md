@@ -43,7 +43,7 @@ If all spaces are filled without a winner, the game ends in a Draw.
 
 Clone the repository:
 
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone (https://github.com/AshutoshSharma312/tic-tac-toe)
 
 
 Navigate to the project folder:
